@@ -39,4 +39,13 @@ public class Essence : MonoBehaviour
             rbd2.drag = randomFallingSpeed;
         }
     }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {       
+        if (collision.gameObject.tag == "Player")
+        {
+            Destroy(gameObject);
+            Debug.Log("Done");
+        }
+    }
 }
