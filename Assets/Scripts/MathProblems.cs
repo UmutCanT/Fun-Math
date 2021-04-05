@@ -22,6 +22,7 @@ public class MathProblems
     public float[] answers;
 
     [Range(0, 3)]
+    public int correctEssence; //index of correct essence
     public int correctAnswer;
 
     // Start is called before the first frame update
