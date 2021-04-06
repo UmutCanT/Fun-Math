@@ -1,14 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Essence : MonoBehaviour
 {
     CapsuleCollider2D capsuleCollider2D;
     Rigidbody2D rbd2;
+    Text problemText;
 
     float randomFallingSpeed;
-    bool isFalling = true;
+    bool isFalling;
 
     public bool Falling
     {
@@ -27,8 +29,9 @@ public class Essence : MonoBehaviour
     {
         capsuleCollider2D = GetComponent<CapsuleCollider2D>();
         rbd2 = GetComponent<Rigidbody2D>();
+        problemText = GetComponent<Text>();
 
-        randomFallingSpeed = Random.Range(1.0f, 20.0f);
+        randomFallingSpeed = Random.Range(5.0f, 10.0f);
     }
 
     // Update is called once per frame
