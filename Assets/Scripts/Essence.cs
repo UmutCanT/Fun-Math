@@ -44,8 +44,22 @@ public class Essence : MonoBehaviour
     {       
         if (collision.gameObject.tag == "Player")
         {
-            Destroy(gameObject);
-            Debug.Log("Done");
+            OnPlayerCollision();
         }
+        if (collision.gameObject.tag == "Ground")
+        {
+            OnGroundCollision();
+        }
+    }
+    void OnPlayerCollision()
+    {
+        Destroy(gameObject);
+        Debug.Log("Player Collected");
+    }
+    
+    void OnGroundCollision()
+    {
+        Destroy(gameObject);
+        Debug.Log("Destroyed");
     }
 }
