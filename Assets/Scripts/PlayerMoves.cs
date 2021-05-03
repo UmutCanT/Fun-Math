@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMoves : MonoBehaviour
 {
@@ -8,6 +9,16 @@ public class PlayerMoves : MonoBehaviour
     Animator animator;
 
     Vector2 velocity;
+    //Problem text for player
+    Text problemText;
+
+    public string Problem
+    {
+        set
+        {
+            problemText.text = value;
+        }
+    }
 
     //Player Attributes
     [SerializeField]
@@ -22,6 +33,7 @@ public class PlayerMoves : MonoBehaviour
     {
         rb2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        problemText = GetComponentInChildren<Text>();
     }
 
     // Update is called once per frame

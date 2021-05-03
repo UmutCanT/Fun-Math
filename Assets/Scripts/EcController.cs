@@ -10,27 +10,20 @@ public class EcController : MonoBehaviour
 
     void Awake()
     {
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else if (instance != this)
-        {
-            Destroy(gameObject);
-        }
-
+        instance = this;
     }
 
     public MathProblems[] mProblems;      // list of all problems
     //current problem the player needs to solve
-    public int curProblem;          
+    public int curProblem;
 
-    public PlayerMoves player; // player object
+    [SerializeField]
+    GameObject playerPrefab = default; // player object
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        SetProblems(0);
     }
 
     // Update is called once per frame
@@ -42,7 +35,7 @@ public class EcController : MonoBehaviour
     void SetProblems(int problem)
     {
         curProblem = problem;
-        // set UI text to show problem and answers
+        EcUI.instance.SetProblemText(mProblems[curProblem]);
     }
 
     void GameOver()
@@ -52,13 +45,22 @@ public class EcController : MonoBehaviour
 
     void WrongEssence()
     {
-        //Player lose health.
+        Debug.Log("Wrong");
+
+        if (mProblems.Length - 1 == curProblem)
+            Destroy(GameObject.FindGameObjectWithTag("Player"));
+        else
+            SetProblems(curProblem + 1);
     }
 
     void CorrectEssence()
     {
-       //Score ++
-       //new set of problems
+        Debug.Log("Correct");
+
+        if (mProblems.Length - 1 == curProblem)
+            Destroy(GameObject.FindGameObjectWithTag("Player"));
+        else
+            SetProblems(curProblem + 1);
     }
 
     // called when the player enters a tube

@@ -7,7 +7,7 @@ public class Essence : MonoBehaviour
 {
     CapsuleCollider2D capsuleCollider2D;
     Rigidbody2D rbd2;
-    Text problemText;
+    Text answerText;
 
     float randomFallingSpeed;
     bool isFalling;
@@ -24,12 +24,20 @@ public class Essence : MonoBehaviour
         }
     }
 
+    public string Answers
+    {
+        set
+        {
+            answerText.text = value;
+        }
+    } 
+
     // Start is called before the first frame update
     void Start()
     {
         capsuleCollider2D = GetComponent<CapsuleCollider2D>();
         rbd2 = GetComponent<Rigidbody2D>();
-        problemText = GetComponent<Text>();
+        answerText = GetComponentInChildren<Text>();
 
         randomFallingSpeed = Random.Range(5.0f, 10.0f);
     }

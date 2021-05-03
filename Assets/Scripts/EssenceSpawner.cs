@@ -41,7 +41,7 @@ public class EssenceSpawner : MonoBehaviour
         {
             GameObject essence = Instantiate(essencePrefab, essencePosition, Quaternion.identity);
             essences.Add(essence);
-            essence.GetComponent<Essence>().Falling = true;
+            essence.GetComponent<Essence>().Falling = true;            
             EssencePositions(i);
         }
     }
