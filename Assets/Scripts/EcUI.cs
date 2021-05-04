@@ -7,17 +7,15 @@ public class EcUI : MonoBehaviour
 {
     public static EcUI instance;
 
-    public Text problemText;                // text that displays the maths problem
-    public Text[] answersTexts = default;             // array of the 4 answers texts
-
-    GameObject essence;
-    GameObject player;
-
     void Awake()
     {
         instance = this;
     }
-    // sets the ship UI to display the new problem
+
+    /// <summary>
+    /// Setting the problem text on the player
+    /// </summary>
+    /// <param name="mProblem"></param>
     public void SetProblemText(MathProblems mProblem)
     {
         string operatorText = "";
@@ -37,12 +35,17 @@ public class EcUI : MonoBehaviour
 
         // set the problem text to display the problem
 
-        problemText.text = mProblem.firstNumber + operatorText + mProblem.secondNumber;   
+        GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMoves>().Problem = mProblem.firstNumber + operatorText + mProblem.secondNumber;      
+    }
 
-        // set the answers texts to display the correct and incorrect answers
-        for (int index = 0; index < 4; ++index)
-        {                      
-            essence.GetComponent<Essence>().Answers = mProblem.answers[index].ToString();
-        }
+    /// <summary>
+    /// Setting the answer on the essence according to index number
+    /// </summary>
+    /// <param name="mProblem"></param>
+    /// <param name="index"></param>
+    public string SetAnswerText(MathProblems mProblem, int index)
+    {
+        Debug.Log(mProblem.answers[index]);
+        return mProblem.answers[index].ToString();       
     }
 }

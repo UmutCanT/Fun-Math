@@ -1,13 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Essence : MonoBehaviour
 {
-    CapsuleCollider2D capsuleCollider2D;
+    CircleCollider2D circleCollider2D;
     Rigidbody2D rbd2;
-    Text answerText;
+
+    int essenceID;
 
     float randomFallingSpeed;
     bool isFalling;
@@ -24,21 +24,18 @@ public class Essence : MonoBehaviour
         }
     }
 
-    public string Answers
+    public int SettingID
     {
         set
         {
-            answerText.text = value;
+            essenceID = value;
         }
-    } 
-
+    }
     // Start is called before the first frame update
     void Start()
     {
-        capsuleCollider2D = GetComponent<CapsuleCollider2D>();
+        circleCollider2D = GetComponent<CircleCollider2D>();
         rbd2 = GetComponent<Rigidbody2D>();
-        answerText = GetComponentInChildren<Text>();
-
         randomFallingSpeed = Random.Range(5.0f, 10.0f);
     }
 
@@ -48,16 +45,18 @@ public class Essence : MonoBehaviour
         if (isFalling)
         {
             rbd2.drag = randomFallingSpeed;
+            Debug.Log(essenceID);
         }
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D col)
     {       
-        if (collision.gameObject.tag == "Player")
+        if (col.CompareTag("Player"))
         {
-            OnPlayerCollision();
+            EcController.instance.OnCollectingEssence(essenceID);
+            OnPlayerCollision();          
         }
-        if (collision.gameObject.tag == "Ground")
+        if (col.CompareTag("Ground"))
         {
             OnGroundCollision();
         }

@@ -571,17 +571,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7924289b6efad848b2d7a9937687e27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1574863659 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1574863659, guid: 127fa243743fa094ea487742002674eb, type: 3}
-  m_PrefabInstance: {fileID: 5394821216409027112}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2135928360
 GameObject:
   m_ObjectHideFlags: 0
@@ -592,7 +581,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2135928361}
   - component: {fileID: 2135928363}
-  - component: {fileID: 2135928362}
   - component: {fileID: 2135928364}
   m_Layer: 0
   m_Name: GameController
@@ -615,19 +603,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2135928362
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2135928360}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 122126f55050fda4090f5ff21e24b9e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  essencePrefab: {fileID: 3228248334627388597, guid: 3b7d5d6adb25d314da0984ede1fdbca7, type: 3}
 --- !u!114 &2135928363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -640,6 +615,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7386ac970cdf0ae4db20cc22071314a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  essencePrefab:
+  - {fileID: 4866236959750837220, guid: ababec33274953a4f843becf1d609976, type: 3}
+  - {fileID: 3383993599833660636, guid: 4d1856723fa70be4a841d38d53cfcfb3, type: 3}
+  - {fileID: 1147158686065524330, guid: f5717fca74d4c3b498990b61287adcf1, type: 3}
+  - {fileID: 9054623909015565560, guid: e5b38608a01eff2469301d3cd440fe82, type: 3}
   mProblems:
   - firstNumber: 34
     secondNumber: 55
@@ -670,12 +650,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 050731475c7e90a4097dc20415e0d796, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  problemText: {fileID: 1574863659}
-  answersTexts:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!1001 &5394821216409027112
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -683,14 +657,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1574863657, guid: 127fa243743fa094ea487742002674eb, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1574863659, guid: 127fa243743fa094ea487742002674eb, type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     - target: {fileID: 5394821215792108081, guid: 127fa243743fa094ea487742002674eb, type: 3}
       propertyPath: m_Name
       value: Player

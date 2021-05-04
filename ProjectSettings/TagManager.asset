@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Essence
   - Ground
+  - FirstAns
+  - SecondAns
+  - ThirdAns
+  - FourthAns
   layers:
   - Default
   - TransparentFX
@@ -46,9 +50,9 @@ TagManager:
   - name: Essence
     uniqueID: 1358332875
     locked: 0
-  - name: Player
-    uniqueID: 3666794645
-    locked: 0
   - name: Answer
     uniqueID: 3982720701
+    locked: 0
+  - name: Player
+    uniqueID: 3666794645
     locked: 0
