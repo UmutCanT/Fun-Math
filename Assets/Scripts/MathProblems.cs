@@ -6,11 +6,12 @@ using UnityEngine;
 [System.Serializable]
 public class MathProblems
 {    
-    public float firstNumber;
-    public float secondNumber;
+    public int firstNumber;
+    public int secondNumber;
     public MathOperations operation;
     public int[] answers;
-    
+    public int correctAnswer;
+
     [Range(0, 3)]
     public int correctEssence; //index of correct essence
 }

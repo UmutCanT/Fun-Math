@@ -44,8 +44,7 @@ public class Essence : MonoBehaviour
     {
         if (isFalling)
         {
-            rbd2.drag = randomFallingSpeed;
-            Debug.Log(essenceID);
+            rbd2.drag = randomFallingSpeed;          
         }
     }
 
@@ -63,13 +62,11 @@ public class Essence : MonoBehaviour
     }
     void OnPlayerCollision()
     {
-        Destroy(gameObject);
-        Debug.Log("Player Collected");
+        Destroy(gameObject);       
     }
     
     void OnGroundCollision()
     {
         Destroy(gameObject);
-        Debug.Log("Destroyed");
     }
 }

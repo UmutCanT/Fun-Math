@@ -620,21 +620,13 @@ MonoBehaviour:
   - {fileID: 3383993599833660636, guid: 4d1856723fa70be4a841d38d53cfcfb3, type: 3}
   - {fileID: 1147158686065524330, guid: f5717fca74d4c3b498990b61287adcf1, type: 3}
   - {fileID: 9054623909015565560, guid: e5b38608a01eff2469301d3cd440fe82, type: 3}
-  mProblems:
-  - firstNumber: 34
-    secondNumber: 55
+  mProblemsList: []
+  mathProblems:
+    firstNumber: 0
+    secondNumber: 0
     operation: 0
-    answers: 4b00000059000000540000004f000000
-    correctEssence: 1
-  - firstNumber: 6
-    secondNumber: 13
-    operation: 2
-    answers: 48000000540000005b0000004e000000
-    correctEssence: 3
-  - firstNumber: 60
-    secondNumber: 3
-    operation: 3
-    answers: 140000001e0000000f00000019000000
+    answers: 
+    correctAnswer: 0
     correctEssence: 0
   curProblem: 0
   playerPrefab: {fileID: 1009495561}
@@ -657,6 +649,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1574863659, guid: 127fa243743fa094ea487742002674eb, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1574863659, guid: 127fa243743fa094ea487742002674eb, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1574863659, guid: 127fa243743fa094ea487742002674eb, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5394821215792108081, guid: 127fa243743fa094ea487742002674eb, type: 3}
       propertyPath: m_Name
       value: Player

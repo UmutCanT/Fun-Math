@@ -23,13 +23,13 @@ public class EcUI : MonoBehaviour
         // convert the problem operator from an enum to an actual text symbol
         switch (mProblem.operation)
         {
-            case MathOperations.Addition: operatorText = " + "; 
+            case MathOperations.Addition: operatorText = " + ";              
                 break;
-            case MathOperations.Subtraction: operatorText = " - "; 
+            case MathOperations.Subtraction: operatorText = " - ";            
                 break;
-            case MathOperations.Multiplication: operatorText = " x "; 
+            case MathOperations.Multiplication: operatorText = " x ";
                 break;
-            case MathOperations.Division: operatorText = " ÷ "; 
+            case MathOperations.Division: operatorText = " ÷ ";
                 break; 
         }
 
@@ -45,7 +45,6 @@ public class EcUI : MonoBehaviour
     /// <param name="index"></param>
     public string SetAnswerText(MathProblems mProblem, int index)
     {
-        Debug.Log(mProblem.answers[index]);
         return mProblem.answers[index].ToString();       
     }
 }
