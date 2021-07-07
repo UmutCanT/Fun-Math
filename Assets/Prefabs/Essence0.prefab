@@ -115,7 +115,7 @@ GameObject:
   - component: {fileID: 4866236959750836248}
   m_Layer: 0
   m_Name: Essence0
-  m_TagString: Untagged
+  m_TagString: Essence
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -129,7 +129,7 @@ Transform:
   m_GameObject: {fileID: 4866236959750837220}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1, y: 2.089, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_Children:
   - {fileID: 4866236959705622621}
   m_Father: {fileID: 0}
@@ -173,7 +173,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1358332875
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 8218901117661952735, guid: ee154da4d47153748a112ce9a057cdf1, type: 3}
   m_Color: {r: 0.018880606, g: 1, b: 0, a: 1}

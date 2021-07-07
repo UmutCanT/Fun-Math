@@ -9,6 +9,18 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: ffc2bd6f8a6cde947ae1f61e6ae65897
   - enabled: 1
+    path: Assets/Scenes/HighScores.unity
+    guid: 85d4e576919ac9f47b17a2d1b39f47ea
+  - enabled: 1
+    path: Assets/Scenes/Settings.unity
+    guid: 1757309a25a19e54992656d4aee7a313
+  - enabled: 1
     path: Assets/Scenes/EssenceCollector.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/PotionMaker.unity
+    guid: 367510eda1c98e4439f71706deb8db53
+  - enabled: 1
+    path: Assets/Scenes/Hunter.unity
+    guid: b0983ce267f0eb5409b491e64d71f0a6
   m_configObjects: {}

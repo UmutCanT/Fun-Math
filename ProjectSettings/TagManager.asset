@@ -6,10 +6,12 @@ TagManager:
   tags:
   - Essence
   - Ground
-  - FirstAns
-  - SecondAns
-  - ThirdAns
-  - FourthAns
+  - Problem
+  - PlayerHealth
+  - Potion
+  - Monster
+  - Slider
+  - Shoot
   layers:
   - Default
   - TransparentFX
@@ -47,6 +49,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: BackGround
+    uniqueID: 3177861475
+    locked: 0
   - name: Essence
     uniqueID: 1358332875
     locked: 0
@@ -55,4 +60,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 3666794645
+    locked: 0
+  - name: UI
+    uniqueID: 929797873
     locked: 0
