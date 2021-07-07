@@ -20,10 +20,4 @@ public class Fullscreen : MonoBehaviour
         tempScale.x = screenWidth / bgWidth;
         transform.localScale = tempScale;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

@@ -88,7 +88,4 @@ public static class PrefSystem
     {
         return PlayerPrefs.GetInt(PrefSystem.hardScoreEc);
     }
-
-    //Music Prefs
-
 }

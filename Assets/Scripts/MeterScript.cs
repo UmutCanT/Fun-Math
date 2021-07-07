@@ -21,5 +21,4 @@ public class MeterScript : MonoBehaviour
         slider.value = health;
         fill.color = gradient.Evaluate(slider.normalizedValue);
     }
-
 }

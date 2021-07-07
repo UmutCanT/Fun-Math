@@ -32,12 +32,6 @@ public class ScoreControl : MonoBehaviour
         hardScoreH.text = "Hard 100/" + HPrefSystem.GetHardHScore();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void BackToMainMenu()
     {
         SceneManager.LoadScene("MainMenu");
